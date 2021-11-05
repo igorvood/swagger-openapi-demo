@@ -1,0 +1,7 @@
+#springdoc.api-docs.path=/api-docs
+#springdoc:
+#  swagger-ui:
+#    path=/swagger-ui-custom.html
+
+application-description: SwaggerDemoApp
+application-version: 0100.10124.25

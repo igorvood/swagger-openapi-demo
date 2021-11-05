@@ -1,0 +1,27 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: openVALIDATION example
+  description: openVALIDATION integration example.
+paths:
+  /:
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/applicant'
+      responses:
+        '200':
+          description: success
+components:
+  schemas:
+    applicant:
+      type: object
+      properties:
+        name:
+          type: string
+        age:
+          type: integer
+        location:
+          type: string
