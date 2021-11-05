@@ -11,6 +11,10 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/applicant'
+            x-ov-rules:
+              culture: en
+              rule: |
+                the location of the applicant MUST be Dortmund
       responses:
         '200':
           description: success
